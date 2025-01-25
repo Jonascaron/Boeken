@@ -6,7 +6,6 @@
 
     $stmt = $conn->prepare($sql);
     $stmt->execute();
-    $stmt->rowCount();
     $series = $stmt->fetchAll(PDO::FETCH_ASSOC);
     include 'head.php';
 ?>
