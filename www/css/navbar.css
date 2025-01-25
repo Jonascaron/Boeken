@@ -1,0 +1,19 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    padding: 0 40px;
+    background-color: var(--clr-bodybackground);
+}
+
+.navbar .logo {
+    height: 41px;
+}
+
+.navbar .logo p {
+    font-family: "UnifrakturMaguntia", serif;
+    font-size: 40px;
+    color: var(--clr-logo);
+}
