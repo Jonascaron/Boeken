@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 60px;
 }
 
 .container_series .container_serie .logo {
@@ -39,18 +40,23 @@
     padding: 22px;
     border-radius: 10px;
     background-color: var(--clr-book);
+    text-decoration: none;
 }
 
 .books .book img {
     height: 450px;
     width: 100%;
+    margin-bottom: var(--spacing-2x);
     object-fit: cover;
 }
 
 .books .book div {
     display: flex;
-    align-items: center;
-    height: 45px;
+    height: 50px;
     width: 100%;
     color: var(--clr-text);
+}
+
+.books .book div p {
+    font-size: 18px;
 }
