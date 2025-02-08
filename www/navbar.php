@@ -2,7 +2,7 @@
     <div class="logo">
         <p>Flanagan</p>
     </div>
-    <div class="form_container">
+    <div class="search">
         <form action="" method="post" class="form" autocomplete="off">
             <input type="text" name="search" id="search" placeholder="Zoeken" class="searchbar">
             <button type="submit" class="searchbutton">
