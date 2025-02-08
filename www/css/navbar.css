@@ -1,6 +1,8 @@
 .navbar {
     position: fixed;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     height: 70px;
     width: 100%;
@@ -10,10 +12,84 @@
 
 .navbar .logo {
     height: 41px;
+    width: 500px;
 }
 
 .navbar .logo p {
     font-family: "UnifrakturMaguntia", serif;
     font-size: 40px;
     color: var(--clr-logo);
+}
+
+.navbar .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+.searchbar::placeholder {
+	color: var(--clr-placeholder);
+}
+
+.navbar .form .searchbar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 515px;
+    padding: 11px 4px 11px 16px;
+    border: 1px solid var(--clr-searchborder);
+    border-right: 0;
+    border-radius: 20px 0 0 20px;
+    background-color: var(--clr-searchbar);
+    color: var(--clr-logodegrijzejager);
+    font-family: "Ubuntu", serif;
+    font-size: 18px;
+}
+
+.navbar .form .searchbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 64px;
+    border: 1px solid var(--clr-searchborder);
+    border-radius: 0 20px 20px 0;
+    background-color: var(--clr-searchbutton);
+}
+
+.navbar .form .searchbutton svg {
+    height: 24px;
+    width: 24px;
+    fill: var(--clr-logodegrijzejager);
+}
+
+.navbar .nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+    width: 500px;
+}
+
+.navbar .nav .nav_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav .nav_list .nav_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar .nav .nav_list .nav_item a{
+    color: var(--clr-logo);
+    text-decoration: none;
 }
