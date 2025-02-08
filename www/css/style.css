@@ -8,9 +8,11 @@
 
 :root {
 	/* body */
-	--clr-bodybackground: #161616;
+	--clr-bodybackground: #121212;
+	--clr-tranparent: #00000000;
 
-	--clr-book: #0f0f0f;
+	--clr-book: #0c0c0c;
+	--clr-placeholder: #ffb7008c;
 
 	/* searchbar */
 	--clr-searchbar: #121212;
