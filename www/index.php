@@ -12,17 +12,12 @@
     <title>home</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <p>Flanagan</p>
-        </div>
-    </nav>
-    <div class="spacer"></div>
+    <?php include 'navbar.php'; ?>
     <section class="container_series">
         <?php foreach ($series as $serie) { 
             $serie_id = $serie['id'];
 
-            $sql2 = "SELECT * FROM books WHERE serie_id = :serie_id";
+            $sql2 = "SELECT * FROM books WHERE serie_id = :serie_id ORDER BY booknumber ASC";
 
             $stmt2 = $conn->prepare($sql2);
             $stmt2->bindParam(':serie_id', $serie_id);
@@ -39,7 +34,7 @@
                         <a class="book" href="">
                             <img src="image/<?php echo $serie['path'] ?>/<?php echo $book['image'] ?>.png">
                             <div>
-                                <p><?php echo $serie['name'] ?> - boek <?php echo $book['booknumber'] ?> - <?php echo $book['name'] ?></p>
+                                <p><?php echo $serie['name'] ?> - Boek <?php echo $book['booknumber'] ?> - <?php echo $book['name'] ?></p>
                             </div>
                         </a>
                     <?php } else {
@@ -48,7 +43,7 @@
                             <a class="book" href="">
                                 <img src="image/<?php echo $serie['path'] ?>/<?php echo $book['image'] ?>.png">
                                 <div>
-                                    <p><?php echo $serie['name'] ?> - boek <?php echo $book['booknumber'] ?> - <?php echo $book['name'] ?></p>
+                                    <p><?php echo $serie['name'] ?> - Boek <?php echo $book['booknumber'] ?> - <?php echo $book['name'] ?></p>
                                 </div>
                             </a>
                     <?php }} ?>
