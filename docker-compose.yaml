@@ -6,6 +6,7 @@ services:
     volumes:
       - ./www:/var/www/html
       - ./vendor:/var/www/vendor
+      - ./config/php:/usr/local/etc/
     ports:
       - "80:80"
     depends_on:
