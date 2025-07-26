@@ -1,6 +1,6 @@
 <nav class="navbar">
     <div class="logo">
-        <p>Flanagan</p>
+        <a href="index.php">Flanagan</a>
     </div>
     <div class="search">
         <form action="" method="post" class="form" autocomplete="off">
@@ -13,10 +13,10 @@
     <div class="nav">
         <ul class="nav_list">
             <li class="nav_item">
-                <a href="index.php">home</a>
+                <a href="index.php">Home</a>
             </li>
             <li class="nav_item">
-                <a href="book_add.php">boeken toevoegen</a>
+                <a href="book_add.php">Boeken toevoegen</a>
             </li>
         </ul>
     </div>
