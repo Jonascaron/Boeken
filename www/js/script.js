@@ -12,4 +12,4 @@ document.getElementById('serie').onchange = function() {
         input_new_serie_path.style.display = 'inline';
         input_new_serie_path.required = true;
     }
-}
+};
