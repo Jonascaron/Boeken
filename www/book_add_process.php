@@ -61,7 +61,7 @@
                 // Validate if the book exists
                 if ($book) {
                     $path = $book['series_path'];
-                    $db_name = 'Book'.$book['book_booknumber'];
+                    $db_name = 'book'.$book['book_booknumber'];
                     $new_name = $db_name.'.'.$img_ex_lc;
                     $img_upload_path = 'image/' . $path . '/' . $new_name;
 
