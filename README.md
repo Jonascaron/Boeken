@@ -6,7 +6,6 @@
 To access your webapp go to http://localhost
 
 ### PhpMyAdmin
-
 To access your mysql database UI called PhpMyAdmin, go to http://localhost:8000
 
 ### Mailhog
