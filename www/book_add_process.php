@@ -115,7 +115,7 @@
         $path = $book['series_path'];
 
         $files = $_FILES['audioFiles'];
-        $uploadDir = 'audio/' . $path . '/Book' . $book['book_booknumber'] . '/';
+        $uploadDir = 'audio/' . $path . '/book' . $book['book_booknumber'] . '/';
 
         if (!is_dir($uploadDir)) {
             mkdir($uploadDir, 0777, true);
