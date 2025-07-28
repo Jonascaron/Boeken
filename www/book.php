@@ -28,6 +28,11 @@
 <body> 
     <section class="container_book">
         <div class="book_details">
+            <a href="index.php" class="back_link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path d="M15.41 16.59L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.59Z" fill="var(--clr-logodegrijzejager);"/>
+                </svg>
+            </a>
             <h1 class="title"><?php echo $book['serie_name']; ?> - <?php echo $book['book_name']; ?> - Boek <?php echo $book['booknumber']; ?></h1>
         </div>
         <div class="spacer"></div>
