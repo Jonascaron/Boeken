@@ -31,7 +31,7 @@
                     <?php if ($stmt2->rowCount() == 1) { 
                         $book = $stmt2->fetch(PDO::FETCH_ASSOC);
                     ?>
-                        <a class="book" href="">
+                        <a class="book" href="book.php?id=<?php echo $book['id'] ?>">
                             <img src="image/<?php echo $serie['path'] ?>/<?php echo $book['image'] ?>.png">
                             <div>
                                 <p><?php echo $serie['name'] ?> - Boek <?php echo $book['booknumber'] ?> - <?php echo $book['name'] ?></p>
@@ -40,7 +40,7 @@
                     <?php } else {
                         $books = $stmt2->fetchall(PDO::FETCH_ASSOC);
                         foreach ($books as $book) { ?>
-                            <a class="book" href="">
+                            <a class="book" href="book.php?id=<?php echo $book['id'] ?>">
                                 <img src="image/<?php echo $serie['path'] ?>/<?php echo $book['image'] ?>.png">
                                 <div>
                                     <p><?php echo $serie['name'] ?> - Boek <?php echo $book['booknumber'] ?> - <?php echo $book['name'] ?></p>
