@@ -50,15 +50,16 @@
 
 ::-webkit-scrollbar {
 	width: 10px;
+	background-color: var(--clr-book);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--clr-menuhover);
+	background: var(--clr-searchbutton);
 	border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--clr-menuborder);
+	background: var(--clr-searchbutton);
 }
 
 body {
