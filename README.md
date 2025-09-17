@@ -1,5 +1,7 @@
 # Boeken
 
+I used docker desktop for this project
+
 ## Available applications
 
 ### Web app
