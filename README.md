@@ -1,6 +1,6 @@
 # Boeken
 
-I used docker desktop for this project
+I used Docker Desktop for this project
 
 ## Available applications
 
